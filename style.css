@@ -1,0 +1,351 @@
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  width: 100vw;
+}
+
+/* Navigation Bar */
+
+#home {
+  background-color: #704470;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin-left:-1cm;
+  margin-right:-1cm;
+  display: flex;
+  align-items: center;
+  height: 120px;
+ }
+
+.topmenu {
+  color: #bbbbbb;
+  margin: 10px;
+  padding: 20px;
+  font-size: 20px;
+  text-decoration:none;
+  margin-right: 2rem;
+}
+
+.topmenu:hover {
+  color: white;
+  font-weight: bolder;
+  text-decoration: underline;
+  /* Add the styles here */
+}
+
+.topdiv {
+  float: right;
+  padding-right: 1cm;
+}
+
+.profile_name {
+  float: left;
+  padding-left: 1.7cm;
+  color: #bbbbbb;
+  font-size: 30px;
+  /* Add the styles here */
+}
+
+.profile_name .contact_info {
+  font-size: 15px;
+  font-style: italic;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.contact_info img {
+  width:20px;
+  margin-right: 10px;
+  float:left;
+}
+
+/* Titles */
+
+h2 {
+  text-align: justify;
+  font-size: 40px;
+  text-align: center;
+  float: left;
+  color: #582f58;
+  margin: 30px;
+  margin-left: 60px;
+  margin-top: 40px;
+  margin-bottom: 0px;
+}
+
+.introduction {
+  text-align: justify;
+  font-size: 30px;
+  text-align: center;
+  float: left;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  animation-duration: 5s;
+  position: relative;
+  color: #302f30;
+}
+
+/* Used in the About Me sections */
+
+.container {
+  display: flex;
+}
+
+/* About Me */
+
+.about-me {
+  align-items: flex-start;
+  gap: 20px; /* Espacio entre la imagen y el texto */
+}
+
+#about-me h1 {
+  font-size: 40px;
+  margin-top: 30px;
+  color: #582f58;
+  text-align: center;
+}
+
+#about-me p {
+  font-size: 23px;
+  color: #525252;
+  margin-top: -56px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto; /* Divide palabras largas en sílabas si es posible */
+  max-width: 100%; /* Asegura que el párrafo no exceda el ancho del contenedor */
+  margin-right: 2rem; /* Añade un margen adicional a la derecha */
+  margin-left: 1rem; /* Añade un margen adicional a la derecha */
+  white-space: pre-line; /* Mantiene los saltos de línea */
+  
+}
+
+.profile_image {
+  width: auto;
+  height: auto;
+  vertical-align: middle;
+  margin: 0;
+  max-height: 100%;
+}
+
+/* Skills */
+
+.all_skills {
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+}
+
+.skill {
+  border: 1px solid gray;
+  display: block;
+  border-radius: 6px;
+  text-align: center;
+  margin: 50px;
+  padding: 10px;
+  width: 2in;
+  font-size: 20px;
+  box-shadow: 0 3px 10px gray;
+  color: #525252;
+}
+
+.skill img {
+  height: 40px;
+  align-items: center;
+}
+
+.skills h4 {
+  align-items: center;
+  font-size: 20px;
+  margin-block-start: 8px;
+  margin-block-end: 5px;
+  font-weight: bold;
+} 
+
+.skills p {
+  align-items: center;
+  font-size: 20px;
+  color: gray;
+  margin-block-start: 5px;
+  margin-block-end: 5px;
+} 
+
+.flex_center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Projects */
+
+.projects-container {
+  margin-top: 30px;
+  margin-left: 60px;
+}
+
+.projects-container hr {
+  border: 1px solid lightgray;
+  width: 75%;
+  margin-left: 5cm;
+}
+
+.project-card {
+  margin: 0 15px 15px 30px;
+  padding-bottom: 5px;
+}
+
+.project-card h3 {
+  font-size: 25px;
+  margin-left: 30px;
+  color: #302f30;
+}
+
+.project-card li {
+  font-size: 20px;
+  margin-left: 30px;
+  margin-right: 30px;
+  color: #525252;
+}
+
+/* Recommendations */
+
+.all_recommendations {
+  display: flex;
+  align-items: center;
+  margin-left: 1in;
+  flex-direction: row;
+  flex-flow: wrap;
+  padding: 20px;
+}
+
+.recommendation {
+  font-style: italic;
+  text-align: left;
+  width: 230px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px var(--primary-shadow);
+  padding: 20px;
+  margin: 10px;
+  border:1px solid gray;
+  font-size: 16px;
+  height:150px;
+  color: #525252;
+}
+
+.recommendation span {
+  color: #7600bc;
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* Scroll to Top Button */
+
+.iconbutton{
+  width: 48px;
+  height: 48px;
+  border-radius: 100%;
+  background-color: #582f58;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  right: 3%;
+  bottom: 3%;
+  cursor: pointer;
+}
+
+/* Form Pop-up */
+
+.popup {
+  width:400px;
+  background-color: #a48ba4;
+  border-radius: 3mm;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  position: fixed;
+  /* padding: 30px; */
+  visibility: hidden;
+}
+
+.popup img {
+  padding-top: 20px;
+}
+
+.popup button {
+  background-color: #fff;
+  border: 1px solid #704470;
+  color: #704470;
+  display: block;
+  border-radius: 6px;
+  text-align: center;
+  margin: 50px;
+  padding: 10px;
+  width: 2in;
+  font-size: 20px;
+  margin-left: 25%;
+}
+
+.popup button:hover {
+  background-color: #fff;
+  border: 2px solid #704470;
+  color: #704470;
+  display: block;
+  font-weight: bolder;
+  text-align: center;
+  cursor: pointer;
+  margin-left: 25%;
+}
+
+/* Recommendation Form */
+
+input, textarea {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+  margin: 10px;  
+  width:100%;
+  color: #302f30;
+}
+
+fieldset {
+  display: flexbox;
+  align-content: center;
+  justify-content: center;  
+  padding: 25px; 
+  margin-left: 50px; 
+  margin-right: 50px;   
+  border: thin solid white;
+  width: 50%;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  align-items: center;
+}
+
+/* Buttons */
+
+button {
+  background-color: #fff;
+  border: 1px solid #704470;
+  color: #704470;
+  display: block;
+  border-radius: 6px;
+  text-align: center;
+  margin: 50px;
+  padding: 10px;
+  width: 2in;
+  font-size: 20px;
+}
+
+button:hover {
+  background-color: #704470;
+  border: 1px solid #704470;
+  color: #fff;
+  display: block;
+  border-radius: 6px;
+  text-align: center;
+  cursor: pointer;
+}
